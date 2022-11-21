@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Cormorant' , serif;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.container-small {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+@import './Home/header.scss';
+@import './Home/Arrival.scss';
+@import './Home/Popular.scss';
+@import './Home/About.scss';
+@import './Footer/Footer.scss'
