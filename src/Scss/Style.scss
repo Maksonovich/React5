@@ -8,17 +8,24 @@
     font-family: 'Cormorant' , serif;
 }
 .container {
-    max-width: 1440px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }
-.container-small {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+
 @import './Home/header.scss';
 @import './Home/Arrival.scss';
 @import './Home/Popular.scss';
 @import './Home/About.scss';
-@import './Footer/Footer.scss'
+@import './Footer/Footer.scss';
+@import './Pages/AboutUs/AboutUs.scss';
+@import './Pages/SecondBlock/SecondBlock.scss';
+@import './BrandsScss/Birkenstock/Birkenstock.scss';
+@import './BrandsScss/Brand/Brand.scss';
+@import './BrandsScss/BrandGeorgy/BrandGeorgy.scss';
+@import './BrandsScss/BrandGeorgy/BrandGeorgy.scss';
+@import './BrandsScss/BrandGeorgyLucy/BrandGeorgyLucy.scss';
+@import './BrandsScss/Deha-About/Deha-About.scss';
+@import './BrandsScss/Deha/Deha.scss';
+@import './BrandsScss/Vintage/Vintage.scss';
+@import './BrandsScss/BrandsHeader/BrandsHeader.scss'

@@ -1,8 +1,4 @@
 import React from 'react'
-import About from '../../Components/Home/About/About'
-import Arrival from '../../Components/Home/Arrival/Arrival'
-import Popular from '../../Components/Home/Popular/Popular'
-import Footer from '../Footer/Footer'
 
 const Header = () => {
   return (
@@ -68,10 +64,6 @@ const Header = () => {
             </main>
         </div>
     </header>
-    <Arrival/>
-    <Popular/>
-    <About/>
-    <Footer/>
 </>
   )
 }

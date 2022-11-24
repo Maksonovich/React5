@@ -1,16 +1,13 @@
-import React from 'react'
-import About from '../../Components/Home/About/About'
-import Arrival from '../../Components/Home/Arrival/Arrival'
-import Popular from '../../Components/Home/Popular/Popular'
-import Footer from '../Footer/Footer'
+import React, { useEffect } from 'react'
+import SecondBlock from '../../Pages/BlockTwo/BlockTwo'
 
-const Header = () => {
+const AboutUs = () => {
   return (
-<>
-<header className='header'>
+    <div>
+      <header className='header'>
         <div className='container'>
-            <nav className='header__nav'>
-                <h1 className='header__title'>
+            <nav className='header__nav-AboutUs'>
+                <h1 className='header__title-AboutUs'>
                 <svg width="129" height="16" viewBox="0 0 129 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.4191 15.7846L9.4082 13.0251H2.74338L1.65907 15.7846H0L6.23273 0L12.1027 15.7846H10.4191ZM6.15936 3.95834L3.19993 11.7287H8.92719L6.15936 3.95834Z" fill="#0F303F"/>
                         <path d="M20.6914 15.7846V0.552734H22.3016V14.4395H27.0424V15.7846H20.6914Z" fill="#0F303F"/>
@@ -22,7 +19,7 @@ const Header = () => {
                     <path d="M127.317 15.7846L126.306 13.0251H119.641L118.557 15.7846H116.897L123.13 0L129 15.7846H127.317ZM123.057 3.95834L120.097 11.7287H125.825L123.057 3.95834Z" fill="#0F303F"/>
                 </svg>
                 </h1>
-                <div className='header__menu'>
+                <div className='header__menu-AboutUs'>
                     <a className='header__menu-link' href=''>Женщины</a>
                     <a className='header__menu-link' href=''>Мужчины</a>
                     <label className='header__search'>
@@ -57,23 +54,22 @@ const Header = () => {
                     </div>
                 </div>
             </nav>
-            <main className='header__main'>
-                <div className='header__main-info'>
-                    <div className='header__main-titles'>
-                        <p className='header__main-title'>Бренд</p>
-                        <h2 className='header__main-subtitle'>American Vintage</h2>
-                        <a href='' className='header__main-link'>Смотреть коллекцию</a>
-                    </div>
-                </div>
+            <main className='header__main-AboutUs'>
+              <h2 className='header__main-AboutUs-header-AboutUs'>о нас</h2>
+              <p className='header__main-AboutUs-title'>
+                Бутик Allegria специализируется на продаже комфортной и современной одежды для свободного
+                времени в стиле кэжуал . Мы считаем, что одежда - это источник радости, что и отражено 
+                в названии нашего бутика.
+              </p>
             </main>
+            <p className='header__main-AboutUs_textUnder'>
+              American Vintage в первую очередь – это качественный трикотаж, изящная красота и летящий крой.
+            </p>
         </div>
-    </header>
-    <Arrival/>
-    <Popular/>
-    <About/>
-    <Footer/>
-</>
+      </header>
+      <SecondBlock/>
+    </div>
   )
 }
 
-export default Header
+export default AboutUs

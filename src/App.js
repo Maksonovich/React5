@@ -1,29 +1,32 @@
 import React from 'react'
-import About from './Components/Home/About/About'
-import Arrival from './Components/Home/Arrival/Arrival'
-import Popular from './Components/Home/Popular/Popular'
 import Header from './Layout/Header/Header'
-import Footer from './Layout/Footer/Footer'
-import Home from './Pages/Home/Home'
 import "./Scss/Style.scss"  
+import {  Route, Routes } from 'react-router-dom'
+import AboutUs from './Pages/AboutUs/AboutUs'
+import SecondBlock from '../src/Pages/BlockTwo/BlockTwo'
+import BrandsPage from './Pages/BrandsPage/BrandsPage'
 
-const App = () => {
-  return (
-    <>
-    <Header/>
-      <main>
-        <Home/>
-        <Arrival/>
-        <Popular/>
-        <About/>
-      </main>  
-    <Footer/>
-              {/* <Link to="/AboutPage">About</Link>
-          <Router>
-            <Route path='/AboutPage' element={<AboutPage/>}/>
-          </Router> */}
-    </>
-  )
-}
+const App = () => (
+  <>
+
+    <Routes>
+      <Route path='/' element={<Header/>}/>
+      <Route path='BrandsPage' element={<BrandsPage/>}/>
+      <Route path='/AboutUs' element={<AboutUs />} />
+      <Route path='/SecondBlock' element={<SecondBlock />} />
+    </Routes>
+
+    {/* <Header />
+    <main>
+      <Home />
+      <Arrival />
+      <Popular />
+      <About />
+      <AboutUs /> 
+
+    </main>
+    <Footer /> */}
+  </>
+)
 
 export default App
