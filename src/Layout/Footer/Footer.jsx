@@ -13,9 +13,10 @@ const Footer = () => {
                 <input type="text" className='Footer__inner-contacts-search'>
                 </input>
                 <div className='Footer__inner-links'>
-                    <li className='Footer__links'>О нас</li>
-                    <li className='Footer__links'><Link to='/AboutUs'></Link>Распространенные вопросы</li>
-                    <li className='Footer__links'><a href=''></a>Бренды</li>
+                    <li className='Footer__links'><Link to="/AboutUs">О нас</Link></li>
+                    <li className='Footer__links'>Распространенные вопросы</li>
+                    <li className='Footer__links'><Link to="BrandsPage">Бренды</Link></li>
+                    <li className='Footer__links'><Link to="/">Home</Link></li>
                 </div>
             </div>
         </div>
