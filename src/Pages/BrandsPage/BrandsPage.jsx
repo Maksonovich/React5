@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from '../../Layout/Header/Header'
 import Vintage from './Vintage/Vintage'
 import Deha from './Deha/Deha'
 import DehaAbout from './DehaAbout/DehaAbout'
